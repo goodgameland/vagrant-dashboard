@@ -5,7 +5,5 @@ apt-get update
 apt-get install -y ruby1.9.1-dev nodejs
 gem install bundle
 gem install dashing
-dashing new lan_dashboard
-cd lan_dashboard
-bundle
+cd /vagrant/lan_dashboard
 dashing start
