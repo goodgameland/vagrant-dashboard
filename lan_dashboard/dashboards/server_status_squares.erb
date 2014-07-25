@@ -1,0 +1,37 @@
+<script type='text/javascript'>
+$(function() {
+  Dashing.widget_base_dimensions = [170, 170]
+  Dashing.numColumns = 10
+});
+</script>
+ 
+<% content_for :title do %>Status Status Squares<% end %>
+ 
+<div class="gridster">
+    <ul>
+        <li data-row="2" data-col="1" data-sizex="2" data-sizey="2">
+            <div data-view="Clock" style="background-color: #4b4b4b"></div>
+            <i class="icon-time icon-background"></i>
+        </li>
+ 
+        <li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
+            <div data-id="welcome" data-view="Text" data-title="Server Status Squares" style="background-color: #4b4b4b"></div>
+        </li>
+ 
+        <li data-row="1" data-col="3" data-sizex="1" data-sizey="1">
+            <div data-id="sss-gateway" data-view="ServerStatusSquares" data-title="Gateway"></div>
+        </li>
+        <li data-row="1" data-col="4" data-sizex="1" data-sizey="1">
+            <div data-id="sss-reddit" data-view="ServerStatusSquares" data-title="Reddit"></div>
+        </li>
+        <li data-row="1" data-col="5" data-sizex="1" data-sizey="1">
+            <div data-id="sss-github" data-view="ServerStatusSquares" data-title="Github"></div>
+        </li>
+        <li data-row="2" data-col="3" data-sizex="1" data-sizey="1">
+            <div data-id="sss-brokenserver" data-view="ServerStatusSquares" data-title="Broken Server"></div>
+        </li>
+        <li data-row="2" data-col="4" data-sizex="1" data-sizey="1">
+            <div data-id="sss-newserver" data-view="ServerStatusSquares" data-title="New Server"></div>
+        </li>
+    </ul>
+</div>
